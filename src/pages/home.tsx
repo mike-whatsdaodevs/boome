@@ -14,7 +14,35 @@ import MenuItem from '@mui/material/MenuItem';
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Grid } from '@mui/material';
 const pages = ['HOME', 'INTRODUCE', 'PRODUCT', 'COOPERATE', 'COMPANY'];
+const block5_list = [
+    'Arbitrage usually requires capital',
+    'Defining the Arbitrage Strategy',
+    'Defining the Arbitrage Strategy',
+    'Integration with DeFi Protocols',
+    'Rigorous Testing and Backtesting',
+    'Risk Management Framework',
+    'Continuous Improvement and Adaptability',
+    'ldentifying Profitable Opportunities',
+    'Understanding Market lnefficiencies',
+    'ldentifying Undervalued Assets',
+    'Understanding Market Inefficiencies',
+    'ldentifying Undervalued Assets',
+    'Exploiting Market Mispricing',
+    'Understanding Market lnefficiencies',
+    'ldentifying Undervalued Assets',
+    'Recognizing Untapped Opportunities',
+    'Continuous Monitoring',
+    'Networking and Information Gathering',
+    'Evaluating Risk and Reward',
+    'Seeking Expert Advice',
+    'Data-Driven Decision Making',
+    'Arbitrage requires fromtrader knowledge and experience',
+    'Bots which traders userequires knowledge ofprogramming',
+    'Some of trades can havelosses or have problem with execution',
+    'Many traders offer copying their strategy and trades',
+]
 
 function Home() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -122,7 +150,67 @@ function Home() {
                     BOOMERANG is a fascinating concept thatcombines elements of Artificial IntelligenceZero Collateral Flash Loans and Arbitrage Trading
                 </div>
             </div>
+            <div className={styles.block2}>
+                <p className={styles.title}>
+                    <span className={styles.left}>what is </span>
+                    <span className={styles.blue}>arbitrage</span>
+                    <span className={styles.right}>?</span>
+                </p>
+                <div className={styles.content}>
+                    <Image width={420} height={420} alt='tb' src={'/home/block2_tb.png'} />
+                    <p>Arbitrage involves exploiting price differences ofthe same asset in different markets or ondifferent platforms. For example, if an asset ispriced lower on one exchange and higher onanother, traders can buy the asset on thecheaper platform and sell it on the moreexpensive one, profiting from the pricedifferential. Arbitrage opportunities are oftenfleeting and require quick execution tocapitalize on the price gaps.</p>
+                </div>
+            </div>
+            <div className={styles.block3}>
+                <p className={styles.title}>
+                    <span className={styles.left}>WHAT IS A</span>
+                    <span className={styles.blue}>DEFI FLASH LOAN</span>
+                    <span className={styles.right}>?</span>
+                </p>
+                <div className={styles.content}>
+                    <p>Flash loans are a relatively new form of uncollateralized loans available to traders onsome decentralized finance (DeFi) protocols based on a blockchain networks. Thistype of loan allows traders to borrow unsecured loans from lenders without intermediaries.</p>
+                </div>
+            </div>
+            <div className={styles.block4}>
+                <p className={styles.title}>
+                    <span className={styles.left}>FLASH LOAN</span>
+                    <span className={styles.blue}>EXAMPLE</span>
+                </p>
+                <div className={styles.content}></div>
+                <p className={styles.info}>
+                    When a flash loan has been issued, the smart contract rules ensure that theborrower pays back the loan before the transaction ends. If this condition isn'tmet, the smart contract reverses the transaction and it's like the loan neverhappened in the first place.
+                </p>
+                <p className={styles.bottom}>
+                    This guarantees the safety of the funds in the reverse pool.
+                </p>
+            </div>
+            <div className={styles.block5}>
+                <p className={styles.title}>
+                    <span className={styles.left}>PROBLEMS</span>
+                </p>
+                <Grid container className={styles.container}>
+                    {
+                        block5_list.map(item =>
+                            <Grid item className={styles.item}>
+                                <Image width={42} height={42} alt='' src={'/home/block5_icon.png'} />
+                                <div className={styles.info}>{item}</div>
+                            </Grid>)
+                    }
+                </Grid>
 
+            </div>
+            <div className={styles.block6}>
+                <Image className={styles.title} width={1000} height={100} alt='boome' src={'/home/block6_title.png'} />
+                <p className={styles.info}>
+                    HIGHLIGHTING PROFITABLE ARBITRAGE POSSIBILITIES
+                </p>
+                <div className={styles.content}></div>
+                <div className={styles.box}>
+                    <div className={styles.card1}></div>
+                    <div className={styles.card2}></div>
+                </div>
+
+            </div>
         </div>
     );
 }
