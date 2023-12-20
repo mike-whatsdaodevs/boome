@@ -16,7 +16,7 @@ import Image from 'next/image';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const pages = ['HOME', 'INTRODUCE', 'PRODUCT', 'COOPERATE', 'COMPANY'];
 
-function ResponsiveAppBar() {
+function Home() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -126,4 +126,4 @@ function ResponsiveAppBar() {
         </div>
     );
 }
-export default ResponsiveAppBar;
+export default Home;
