@@ -197,7 +197,6 @@ function Home() {
                             </Grid>)
                     }
                 </Grid>
-
             </div>
             <div className={styles.block6}>
                 <Image className={styles.title} width={1000} height={100} alt='boome' src={'/home/block6_title.png'} />
@@ -209,7 +208,223 @@ function Home() {
                     <div className={styles.card1}></div>
                     <div className={styles.card2}></div>
                 </div>
+                <Grid container spacing={3} className={styles.sudoku}>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku1.png'} />
+                            <span>Zero collateral loans - every user of Boomerang can receive loan for transaction</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku2.png'} />
+                            <span>Al scans available DEXs andwill present the best available trade options</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku3.png'} />
+                            <span>No need to have experience or knowledge with trading bots to be successful trader</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku4.png'} />
+                            <span>Al presents only profitable trades - there is no option to exescute trade with loss</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku5.png'} />
+                            <span>Seamless user interface</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku6.png'} />
+                            <span>No need to have experience or knowledge with trading bots to be successful trader</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku7.png'} />
+                            <span>Aggregated flash loanslending</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku8.png'} />
+                            <span>Aggregated DEX marketplace</span>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={4} className={styles.item}>
+                        <Box className={styles.box}>
+                            <Image width={60} height={60} alt='sudoku' src={'/home/block6_sudoku9.png'} />
+                            <span>Top pair suggestions</span>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </div>
+            <div className={styles.block7}>
+                <Image className={styles.title} width={1000} height={80} alt='boome' src={'/home/block7_title.png'} />
+                <div className={styles.content}>
+                    <div className={styles.item}>
+                        <p>Collateral-Fre</p>
+                        <span>Flash loans do not require borrowers to provide collateral.</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>Liquidity Provision</p>
+                        <span>Flash loans can be used to provideliquidity to decentralized exchanges</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>No Credit</p>
+                        <span>Flash loans are permissionless and do not involve credit checks or traditional underwriting processes.</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>Risk</p>
+                        <span>Flash loans can be used as a risk management tool.</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>Instant Access</p>
+                        <span>Flash loans are executed instantly within a single blockchain transaction.</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>Reduced Capital Lockup</p>
+                        <span>Flash loans allow users to access capital without locking up their assets.</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>Arbitrage</p>
+                        <span>Flash loans enable traders and arbitrageurs to take advantage of price discrepancies between different cryptocurrency exchanges or DeFi platforms.</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>Lower Costs</p>
+                        <span>Flash loans can be more cost-effective compared to traditional lending platforms since they eliminate the need for intermediaries like banks and credit institutions.</span>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.block8}>
+                <p className={styles.title}>
+                    <span className={styles.left}>NETWORKS</span>
+                </p>
+                <div className={styles.content}>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon1.png'} />
+                        <div>ETHEREUM</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon2.png'} />
+                        <div>POLYGON</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon3.png'} />
+                        <div>BINANCE SMART CHAIN</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon4.png'} />
+                        <div>ARBITRUM</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon5.png'} />
+                        <div>AVALANCHE</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon6.png'} />
+                        <div>FANTOM</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon7.png'} />
+                        <div>METIS</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block8_icon8.png'} />
+                        <div>OPTIMISUM</div>
+                    </div>
 
+                </div>
+            </div>
+            <div className={styles.block9}>
+                <p className={styles.title}>
+                    <span className={styles.left}>FLASH LOAN LENDING PROTOCOL</span>
+                </p>
+                <div className={styles.content}>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block9_icon1.png'} />
+                        <div>AAVE</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block9_icon2.png'} />
+                        <div>RADIANT</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block9_icon3.png'} />
+                        <div>DYDX</div>
+                    </div>
+                    <div className={styles.item}>
+                        <Image width={35} height={35} alt='icon' src={'/home/block9_icon4.png'} />
+                        <div>UNISWAP</div>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.block10}>
+                <p className={styles.title}>
+                    <span className={styles.left}>DECENTRALIZED EXCHANGES</span>
+                </p>
+                <div className={styles.content}>
+                    <Image width={1000} height={250} alt='block10' src={'/home/block10_content.png'} />
+                </div>
+            </div>
+            <div className={styles.block11}>
+                <p className={styles.title}>
+                    <span className={styles.left}>WALLETS</span>
+                </p>
+                <div className={styles.content}>
+                    <Image width={1000} height={60} alt='bloc11' src={'/home/block11_content.png'} />
+                </div>
+            </div>
+            <div className={styles.block12}>
+                <p className={styles.title}>
+                    <span className={styles.left}>DECENTRALIZED EXCHANGES AGGRAGATORS</span>
+                </p>
+                <div className={styles.content}>
+                    <Image width={400} height={60} alt='bloc12' src={'/home/block12_content.png'} />
+                </div>
+            </div>
+            <div className={styles.block13}>
+                <p className={styles.title}>
+                    <span className={styles.left}>ROADMAP</span>
+                </p>
+                <div className={styles.info}>(TIMELINE)</div>
+                <div className={styles.content}>
+                    <Image width={959} height={749} alt='bloc12' src={'/home/block13_content.png'} />
+                </div>
+            </div>
+            <div className={styles.block14}>
+                <p className={styles.title}>
+                    <span className={styles.left}>ABOUT US</span>
+                </p>
+                <div className={styles.content}>
+                    <div className={styles.item}>
+                        <p>WHY CHOOSE US？</p>
+                        <span>BOOMERANG prepares profitable trades and keeping the execution of arbitrage trades fortrader. Smart contracts lock in the trade parameters, ensure timely execution, and facilitatethe movement of assets between different markets or platforms.By using smart contracts and Al, MoWGLl protocol can achieve a high degree ofautomation, transparency, and reliability in executing arbitrage trades without the need for manual coding and analyzing</span>
+                    </div>
+                    <div className={styles.item}>
+                        <p>YOUR SUCCESS TRADES</p>
+                        <span>·Arbitrage is the purchase and sale of an asset in order to profit from a difference in the asset's price between marketplaces.</span>
+                        <span>·There is no risk of losing money should a sequence of trades not execute as expected;the transactions will be reverted due to lack of funds, because the smart contract isn'table to repay a flash loan or before others do</span>
+                        <span>·It does not require any kind of prediction algorithm or stop-loss strategy, but rather itdeals with finding profitable opportunities in the present moment before they disappear</span>
+                    </div>
+                </div>
+                <div className={styles.bottom}>
+                    <Image width={865} height={234} alt='block14' src={'/home/block14_bottom.png'} />
+                </div>
+            </div>
+            <div className={styles.bottom}>
+                <div className={styles.left}>
+
+                </div>
+                <div className={styles.right}>
+
+                </div>
             </div>
         </div>
     );

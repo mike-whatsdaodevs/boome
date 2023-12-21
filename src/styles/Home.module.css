@@ -291,3 +291,176 @@
   background-size: contain;
   background-position: center;
 }
+
+.block6 .sudoku {
+  max-width: 1000px;
+  margin: 30px auto 80px auto;
+
+}
+
+.block6 .sudoku .item {}
+
+.block6 .sudoku .item .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(160, 198, 255, 0.10);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+
+}
+
+.block6 .sudoku .item .box span {
+  color: #FFF;
+  text-align: center;
+  font-family: Source Han Sans CN;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
+  min-height: 72px;
+  margin-top: 10px;
+}
+
+.block7 {
+  min-height: 100vh;
+  background: url(/home/block7_bg.png) no-repeat center top;
+  background-size: cover;
+  text-align: center;
+
+}
+
+.block7 .content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.block7 .content .item {
+  width: 50%;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 40px;
+  background: url(/home/block7_icon.png) no-repeat;
+  background-size: 25px 25px;
+  background-position: 0px 10px;
+  margin-top: 50px;
+}
+
+.block7 .content .item>p {
+  color: #FFF;
+  font-family: Source Han Sans CN;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.block7 .content .item>sapn {
+  color: #FFF;
+  font-family: Source Han Sans CN;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.block8 .content,
+.block9 .content {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.block8 .content .item,
+.block9 .content .item {
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.block8 .content .item>div,
+.block9 .content .item>div {
+  margin-left: 10px;
+}
+
+.block10 .content,
+.block11 .content,
+.block12 .content,
+.block13 .content {
+  width: 1000px;
+  margin: 60px auto 60px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.block13 .info {
+  color: rgba(255, 255, 255, 0.80);
+  text-align: center;
+  font-family: Source Han Sans CN;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block14 {
+  background: url(/home/block14_bg.png) no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+  min-height: 50vh;
+}
+
+.block14 .content {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.block14 .content .item {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(160, 198, 255, 0.10);
+  backdrop-filter: blur(20px);
+  margin: 20px;
+  padding: 20px;
+}
+
+.block14 .content .item>p {
+  color: #FFF;
+  font-family: Source Han Sans CN;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.block14 .content .item>span {
+  color: #FFF;
+  font-family: Source Han Sans CN;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.block14 .bottom {
+  display: flex;
+  justify-content: center;
+}
