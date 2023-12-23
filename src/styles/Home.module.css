@@ -16,10 +16,22 @@
   align-items: center;
 }
 
-.block1>.title {
+.block1 .bigTitle {
   margin-top: 200px;
   width: 926.8px;
-  height: 142.8px;
+  height: 100px;
+}
+
+.block1 .secondTitle {
+  width: 926.8px;
+  color: #FFF;
+  font-family: Source Han Sans CN;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: right;
+  letter-spacing: 4px;
 }
 
 .block1 .bar {
@@ -81,6 +93,7 @@
 .block2 {
   height: 70vh;
   background: url('/home/block2_bg.png') no-repeat;
+  background-color: rgba(5, 4, 11);
 }
 
 .title {
