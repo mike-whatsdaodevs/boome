@@ -175,46 +175,6 @@ function Home() {
                         BOOMERANG is a fascinating concept thatcombines elements of Artificial IntelligenceZero Collateral Flash Loans and Arbitrage Trading
                     </div>
                 </div>
-                <motion.article
-                    initial="hidden"
-                    animate="visible"
-                    exit={{ opacity: 0, transition: { duration: 1 } }}
-                    variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
-                    key={1}
-                >
-                    <motion.h1
-                        variants={{
-                            hidden: { opacity: 0, y: -20 },
-                            visible
-                        }}
-                        key={2}
-                        style={
-                            {
-                                "--base-width": "24vw",
-                                top: "-18vw",
-                                letterSpacing: "-1.4vw",
-                                x: "-50%"
-                            } as any
-                        }
-                    >
-                        <span style={{ color: 'pink', fontSize: '40px', background: 'yellow' }}>
-                            Galleries
-                            Galleries
-                            Galleries
-                            Galleries
-                            Galleries
-                            Galleries
-                        </span>
-                    </motion.h1>
-                    <ul>
-                        <motion.li variants={itemVariants}>
-                            <div>Amsterdam Zuid nightwalk</div>
-                        </motion.li>
-                        <motion.li variants={itemVariants}>
-                            <div>White lines of Canary Wharf</div>
-                        </motion.li>
-                    </ul>
-                </motion.article>
                 <div className={styles.block2}>
                     <p className={styles.title}>
                         <span className={styles.left}>what is </span>
