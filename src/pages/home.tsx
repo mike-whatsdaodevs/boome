@@ -215,8 +215,8 @@ function Home() {
                     </p>
                     <Grid container className={styles.container}>
                         {
-                            block5_list.map(item =>
-                                <Grid item className={styles.item}>
+                            block5_list.map((item, index) =>
+                                <Grid item className={styles.item} key={index}>
                                     <Image width={42} height={42} alt='' src={'/home/block5_icon.png'} />
                                     <div className={styles.info}>{item}</div>
                                 </Grid>)
