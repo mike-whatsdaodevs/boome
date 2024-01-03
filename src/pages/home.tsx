@@ -124,9 +124,12 @@ function Home() {
                                         onClick={handleCloseNavMenu}
                                         sx={{
                                             my: 2,
-                                            color: 'rgba(255, 255, 255, 0.60)',
+                                            color: '#0E440E',
                                             display: 'block',
-                                            padding: '10px 20px'
+                                            padding: '10px 20px',
+                                            ":hover": {
+                                                color: '#00E000',
+                                            }
                                         }}
                                     >
                                         {page}
@@ -148,58 +151,63 @@ function Home() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <Image className={styles.bigTitle} width={800} height={60} alt='boome' src={'/home/block6_title.png'} />
+                        <Image className={styles.bigTitle} width={1200} height={28} alt='boome' src={'/home/block1_title.png'} />
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <p className={styles.secondTitle}>A ZERO COLLATERAL AI ARBITRAGE PROTOCOL</p>
+                        <p className={styles.secondTitle}>
+                            BOOMERANG is a fascinating concept thatcombines elements of Artificial IntelligenceZero Collateral Flash Loans and Arbitrage Trading
+                        </p>
                     </motion.div>
+                    <Image className={styles.wave} width={1920} height={442} alt='boome' src={'/home/block1_wave.png'} />
                     <div className={styles.bar}>
-                        <div className={styles.item}>
-                            <Image className={styles.title} width={50} height={50} alt='boome' src={'/home/block1_openai.png'} />
-                            <span className={styles.content}>OpenAI</span>
-                        </div>
-                        <div className={styles.item}>
-                            <Image className={styles.title} width={50} height={50} alt='boome' src={'/home/block1_bard.png'} />
-                            <span className={styles.content}>Bard</span>
-                        </div>
-                        <div className={styles.item}>
-                            <Image className={styles.title} width={50} height={50} alt='boome' src={'/home/block1_gemini.png'} />
-                            <span className={styles.content}>GEMINI</span>
-                        </div>
-                    </div>
-                    <div className={styles.bottom}>
-                        BOOMERANG is a fascinating concept thatcombines elements of Artificial IntelligenceZero Collateral Flash Loans and Arbitrage Trading
+                        <Image className={styles.title} width={335} height={159} alt='boome' src={'/home/block1_openai.png'} />
+                        <Image className={styles.title} width={336} height={173} alt='boome' src={'/home/block1_bard.png'} />
+                        <Image className={styles.title} width={311} height={122} alt='boome' src={'/home/block1_gemini.png'} />
                     </div>
                 </div>
                 <div className={styles.block2}>
-                    <p className={styles.title}>
-                        <span className={styles.left}>what is </span>
-                        <span className={styles.blue}>arbitrage</span>
-                        <span className={styles.right}>?</span>
-                    </p>
-                    <div className={styles.content}>
-                        <Image width={420} height={420} alt='tb' src={'/home/block2_tb.png'} />
-                        <p>Arbitrage involves exploiting price differences ofthe same asset in different markets or ondifferent platforms. For example, if an asset ispriced lower on one exchange and higher onanother, traders can buy the asset on thecheaper platform and sell it on the moreexpensive one, profiting from the pricedifferential. Arbitrage opportunities are oftenfleeting and require quick execution tocapitalize on the price gaps.</p>
+                    <div className={styles.spannel}>
+                        <div className={styles.toptitle}>
+                            WHAT IS ARBITRAGE?
+                        </div>
+                        <p className={styles.leftinfo}>
+                            Arbitrage involves exploiting price differences ofthe same asset in different markets or on different platforms. For example, if an asset ispriced lower on one exchange and higher on another,traders can buy the asset on the cheaper platform and sell it on the more expensive one, profiting from the price differential.Arbitrage opportunities are often fleeting and require quick execution tocapitalize on the price gaps.
+                        </p>
+                        <p className={styles.rightinfo}>
+                            Flash loans are a relatively new form of uncollateralized loans available to traders onsome decentralized finance (DeFi) protocols based on a blockchain networks. Thistype of loan allows traders to borrow unsecured loans from lenders without intermediaries.
+                        </p>
+                        <div className={styles.bottomtitle}>
+                            WHAT IS A DEFI FLASH LOAN?
+                        </div>
                     </div>
                 </div>
                 <div className={styles.block3}>
                     <p className={styles.title}>
-                        <span className={styles.left}>WHAT IS A</span>
-                        <span className={styles.blue}>DEFI FLASH LOAN</span>
-                        <span className={styles.right}>?</span>
+                        FLASH LOAN EXAMPLE
                     </p>
                     <div className={styles.content}>
-                        <p>Flash loans are a relatively new form of uncollateralized loans available to traders onsome decentralized finance (DeFi) protocols based on a blockchain networks. Thistype of loan allows traders to borrow unsecured loans from lenders without intermediaries.</p>
+                        <Image style={{ width: '76%', height: 'auto', marginTop: '30px' }} width={1141} height={214} alt='boome' src={'/home/block3_flash1.png'} />
+                        <Image style={{ width: '100%', height: 'auto', marginTop: '30px' }} width={1498} height={260} alt='boome' src={'/home/block3_flash2.png'} />
+                        <Image style={{ width: '100%', height: 'auto', marginTop: '30px' }} width={1498} height={260} alt='boome' src={'/home/block3_flash3.png'} />
+                        <Image style={{ width: '76%', height: 'auto', marginTop: '30px' }} width={1137} height={216} alt='boome' src={'/home/block3_flash4.png'} />
+                        <Image style={{ width: '76%', height: 'auto', marginTop: '30px' }} width={1149} height={228} alt='boome' src={'/home/block3_flash5.png'} />
                     </div>
+                    <p style={{ margin: 'auto', maxWidth: '1000px', color: '#0D3C11', textAlign: 'center', lineHeight: '28px' }}>
+                        WHEN A FLASH LOAN HAS BEEN ISSUED, THE SMART CONTRACT RULES ENSURE THAT THEBORROWER PAYS BACK THE LOAN
+                        BEFORE THE TRANSACTION ENDS. IF THIS CONDITION ISN'TMET, THE SMART CONTRACT REVERSES THE TRANSACTION AND
+                        IT'S LIKE THE LOAN NEVERHAPPENED IN THE FIRST PLACE.
+                    </p>
+                    <p className={styles.bottom}>
+                        THIS GUARANTEES THE SAFETY OF THE FUNDS IN THE REVERSE POOL
+                    </p>
                 </div>
                 <div className={styles.block4}>
                     <p className={styles.title}>
-                        <span className={styles.left}>FLASH LOAN</span>
-                        <span className={styles.blue}>EXAMPLE</span>
+                        PROBLEMS
                     </p>
                     <div className={styles.content}></div>
                     <p className={styles.info}>
