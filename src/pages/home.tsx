@@ -7,16 +7,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { Grid } from '@mui/material';
+import { Grid, styled } from '@mui/material';
 import { AnimatePresence, motion } from "framer-motion";
-import TextWithReverseIndent from '@/components/TextWithIndent';
+import { ParallaxText } from '@/components/ScrollText';
 const pages = ['HOME', 'INTRODUCE', 'PRODUCT', 'COOPERATE', 'COMPANY'];
 const block5_list = [
     'Arbitrage usually requires capital',
@@ -45,6 +42,58 @@ const block5_list = [
     'Some of trades can havelosses or have problem with execution',
     'Many traders offer copying their strategy and trades',
 ]
+const block2_list = [{
+    name: 'UNISWAP',
+    img: '/home/block2_uniswap.png'
+}, {
+    name: 'COMPOUND',
+    img: '/home/block2_compound.png'
+}, {
+    name: 'STARGATE',
+    img: '/home/block2_stargate.png'
+}, {
+    name: 'CURVE',
+    img: '/home/block2_curve.png'
+}, {
+    name: 'PARA',
+    img: '/home/block2_para.png'
+}, {
+    name: 'SUSHI',
+    img: '/home/block2_sushi.png'
+}, {
+    name: 'SPOOKYSWAP',
+    img: '/home/block2_spookyswap.png'
+}, {
+    name: 'AAVE',
+    img: '/home/block2_AAVE.png'
+}, {
+    name: '1INCH',
+    img: '/home/block2_1inch.png'
+}, {
+    name: 'QUICKSWAP',
+    img: '/home/block2_quickswap.png'
+}, {
+    name: 'MAKER',
+    img: '/home/block2_maker.png'
+}, {
+    name: 'LIDO',
+    img: '/home/block2_lido.png'
+}, {
+    name: 'YEARN-FINANCE',
+    img: '/home/block2_yearn-finance.png'
+}, {
+    name: 'SYNTHETIX',
+    img: '/home/block2_synthetix.png'
+}]
+
+const LoginButton = styled(Button)`
+    color: rgba(255,255,255,0.75);
+    border-color: rgba(255,255,255,0.6);
+    &:hover {
+        border-color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);
+}
+`
 
 const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
 
@@ -66,13 +115,12 @@ function Home() {
 
     return (
         <AnimatePresence mode="wait">
-
             <div key={'00'}>
                 <AppBar position="fixed" className={styles.nav}>
                     <Container maxWidth="xl">
                         <Toolbar disableGutters>
                             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                                <Image width={375} height={36} alt='boome' src='/logo2.png' />
+                                <Image width={375} height={36} alt='boome' src='/logo2.png' style={{ width: 280, height: 'auto', marginTop: '-3px' }} />
                             </Box>
                             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                                 <IconButton
@@ -114,22 +162,27 @@ function Home() {
                             <Box
                                 sx={{
                                     display: { xs: 'flex', md: 'none' },
-                                    flexGrow: 2
+                                    flexGrow: 2,
+                                    width: 100,
+                                    height: 'auto'
                                 }}>
                                 <Image width={375} height={36} alt='boome' src='/logo2.png' />
                             </Box>
-                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, marginLeft: 10 }}>
+                            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, marginLeft: 20 }}>
                                 {pages.map((page) => (
                                     <Button
                                         key={page}
                                         onClick={handleCloseNavMenu}
                                         sx={{
                                             my: 2,
-                                            color: '#0E440E',
+                                            color: '#FFFFFF',
                                             display: 'block',
                                             padding: '10px 20px',
+                                            opacity: 0.6,
+                                            transition: 'all .3s',
                                             ":hover": {
-                                                color: '#00E000',
+                                                color: '#FFFFFF',
+                                                opacity: 1
                                             }
                                         }}
                                     >
@@ -137,9 +190,8 @@ function Home() {
                                     </Button>
                                 ))}
                             </Box>
-
                             <Box sx={{ flexGrow: 0, fontSize: 2 }}>
-                                <AccountCircleIcon />
+                                <LoginButton variant='outlined'>SIGN UP</LoginButton>
                             </Box>
                         </Toolbar>
                     </Container>
@@ -149,28 +201,20 @@ function Home() {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
+                        style={{ width: '80%', zIndex: 10 }}
                     >
-                        <Image className={styles.bigTitle} width={1200} height={28} alt='boome' src={'/home/block1_title.png'} />
+                        <Image className={styles.bigTitle} width={1140} height={174} alt='boome' src={'/home/block1_title.png'} />
                     </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        <p className={styles.secondTitle}>
-                            BOOMERANG is a fascinating concept thatcombines elements of Artificial IntelligenceZero Collateral Flash Loans and Arbitrage Trading
-                        </p>
-                    </motion.div>
-                    <Image className={styles.wave} width={1920} height={442} alt='boome' src={'/home/block1_wave.png'} />
-                    <div className={styles.bar}>
+                    <div className={styles.bar} style={{ zIndex: 10 }}>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5 }}
-                            whileHover={{ scale: 1.1 }}
+                            whileHover={{ scale: 1.05 }}
                             className={styles.title}
                         >
-                            <Image width={335} height={159} alt='boome' src={'/home/block1_openai.png'} />
+                            <Image className={styles.img} width={56} height={56} alt='boome' src={'/home/block1_openai.png'} />
+                            <span>Open AI</span>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
@@ -179,7 +223,8 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             className={styles.title}
                         >
-                            <Image width={336} height={173} alt='boome' src={'/home/block1_bard.png'} />
+                            <Image className={styles.img} width={56} height={56} alt='boome' src={'/home/block1_bard.png'} />
+                            <span>Bard</span>
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.5 }}
@@ -188,20 +233,54 @@ function Home() {
                             whileHover={{ scale: 1.1 }}
                             className={styles.title}
                         >
-                            <Image width={311} height={122} alt='boome' src={'/home/block1_gemini.png'} />
+                            <Image className={styles.img} width={56} height={56} alt='boome' src={'/home/block1_gemini.png'} />
+                            <span>Gemini</span>
                         </motion.div>
                     </div>
+                    <div style={{ zIndex: 10, width: '80%', textAlign: 'center' }}>
+                        <Image className={styles.bottom} width={1320} height={108} alt='boome' src={'/home/block1_bottom.png'} />
+                    </div>
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        style={{ width: '100%', height: '100%' }}
+                        className={styles.motion}
+                        poster="/home/first.png"
+                    >
+                        <source src="/home/motion.mp4" type="video/mp4" />
+                    </video>
+
                 </div>
                 <div className={styles.block2}>
+                    <div className={styles.scroll}>
+                        <ParallaxText baseVelocity={-1}>
+                            {
+                                block2_list.slice(0, 7).map((item, index) => (
+                                    <div key={index} className={styles.item}>
+                                        <Image width={49} height={49} alt='boome' src={item.img} style={{ width: 24, height: 'auto', marginTop: '-3px' }} />
+                                        <span color='#fff'>{item.name}</span>
+                                    </div>
+                                ))
+                            }
+                        </ParallaxText>
+                        <ParallaxText baseVelocity={1}>
+                            {
+                                block2_list.slice(7).map((item, index) => (
+                                    <div key={index} className={styles.item}>
+                                        <Image width={49} height={49} alt='boome' src={item.img} style={{ width: 24, height: 'auto', marginTop: '-3px' }} />
+                                        <span>{item.name}</span>
+                                    </div>
+                                ))
+                            }
+                        </ParallaxText>
+                    </div>
                     <div className={styles.spannel}>
                         <div className={styles.toptitle}>
                             WHAT IS ARBITRAGE?
                         </div>
                         <p className={styles.leftinfo}>
-                            Arbitrage involves exploiting price differences ofthe same asset in different markets or on different platforms. For example, if an asset ispriced lower on one exchange and higher on another,traders can buy the asset on the cheaper platform and sell it on the more expensive one, profiting from the price differential.Arbitrage opportunities are often fleeting and require quick execution tocapitalize on the price gaps.
-                        </p>
-                        <p className={styles.rightinfo}>
-                            Flash loans are a relatively new form of uncollateralized loans available to traders onsome decentralized finance (DeFi) protocols based on a blockchain networks. Thistype of loan allows traders to borrow unsecured loans from lenders without intermediaries.
+                        Arbitrage involves exploiting price differences of the sameasset in different markets or ondifferent platforms. For example, if an asset ispriced lower on one exchange and higher onanother, traders can buy the asset on thecheaper platform and sell it on the moreexpensive one, profiting from the price differential. Arbitrage opportunities are often fleeting and require quick execution tocapitalize on the price gaps.
                         </p>
                         <div className={styles.bottomtitle}>
                             WHAT IS A DEFI FLASH LOAN?
@@ -220,9 +299,13 @@ function Home() {
                         <Image style={{ width: '76%', height: 'auto', marginTop: '30px' }} width={1149} height={228} alt='boome' src={'/home/block3_flash5.png'} />
                     </div>
                     <p className={styles.info}>
-                        WHEN A FLASH LOAN HAS BEEN ISSUED, THE SMART CONTRACT RULES ENSURE THAT THEBORROWER PAYS BACK THE LOAN
+                        {
+                            `
+                            WHEN A FLASH LOAN HAS BEEN ISSUED, THE SMART CONTRACT RULES ENSURE THAT THEBORROWER PAYS BACK THE LOAN
                         BEFORE THE TRANSACTION ENDS. IF THIS CONDITION ISN'TMET, THE SMART CONTRACT REVERSES THE TRANSACTION AND
                         IT'S LIKE THE LOAN NEVERHAPPENED IN THE FIRST PLACE.
+                            `
+                        }
                     </p>
                     <p className={styles.bottom}>
                         THIS GUARANTEES THE SAFETY OF THE FUNDS IN THE REVERSE POOL
