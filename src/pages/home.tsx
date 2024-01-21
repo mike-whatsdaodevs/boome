@@ -341,8 +341,8 @@ function Home() {
                         autoPlay
                         loop
                         muted
-                        style={{ width: '100%', height: '100%' }}
                         className={styles.motion}
+                        style={{width: '100%', height: '100%'}}
                         poster="/home/first.png"
                     >
                         <source src="/home/motion.mp4" type="video/mp4" />
