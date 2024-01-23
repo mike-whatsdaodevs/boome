@@ -18,11 +18,17 @@
   font-weight: 400;
   line-height: normal;
 }
+.firstContent {
+  padding-top: 6.94rem;
+  background: url("/mobile/boomer.gif") no-repeat;
+  background-size: 59rem 37rem;
+  background-position: 0rem 0rem;
+  padding-bottom: 2.7rem;
+}
 .bannerContent {
   width: 17.60463rem;
   /* height: 2.67444rem; */
   margin: 0 auto;
-  margin-top: 6.94rem;
 }
 .bannerContentImg {
   width: 17.60463rem;
@@ -63,4 +69,29 @@
   width: 21.5625rem;
   height: 4.71225rem;
   margin: 0 auto;
+}
+.scrollitem {
+  padding: 0 1.49rem;
+  height: 2.2545rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 2.5rem;
+  margin-left: 0.6rem;
+}
+.scrollitem img {
+  width: 1.5rem;
+}
+.scrollitem span {
+  color: #fff;
+  font-family: "Source Han Sans CN";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
