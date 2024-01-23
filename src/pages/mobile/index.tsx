@@ -105,13 +105,193 @@ export default function Mobile() {
           {
             block2_list.slice(7).map((item, index) => (
               <div key={index} className={styles.scrollitem}>
-                <Image width={49} height={49} alt='boome' src={item.img} style={{ width: 24, height: 'auto', marginTop: '-3px' }} />
+                <img alt='boome' src={item.img} style={{ height: 'auto', marginTop: '-3px' }} />
                 <span>{item.name}</span>
               </div>
             ))
           }
         </ParallaxText>
+      </div>
+      <div className={styles.title}>
+        WHAT IS<br />
+        <span style={{ color: '#00F600' }}> ARBITRAGE?</span>
+      </div>
 
+      <p className={styles.textContent}>
+        <strong>Arbitrage</strong> involves exploiting price differences<br />
+        of the sameasset in different markets or <br />
+        ondifferent platforms. For example, if an asset<br />
+        ispriced lower on one exchange and higher<br />
+        onanother, traders can buy the asset on<br />
+        thecheaper platform and sell it on the<br />
+        moreexpensive one, profiting from the price <br />
+        differential.<br />
+        <strong>Arbitrage</strong> opportunities are often fleeting and <br />
+        require quick execution tocapitalize on the <br />
+        price gaps.
+      </p>
+      <img className={styles.rat} src={'/home/block2_rat2.png'} />
+
+      <div className={styles.title1}>
+        WHAT IS<span style={{ color: '#00F600' }}>A DEFI
+          FLASH LOAN?</span>
+      </div>
+
+      <p className={styles.textContent1}>
+        <strong>Flash</strong> loans are a relatively new form of<br />
+        uncollateralized loans available to traders<br />
+        on some decentralized finance (DeFi)<br />
+        protocols based on a blockchain networks.<br />
+        This type of loan allows traders to borrow<br />
+        unsecured loans from lenders without<br />
+        intermediaries.
+      </p>
+      <img className={styles.rat} src={'/home/block2_rat1.png'} />
+      <div className={styles.textContainer}>
+        <img className={styles.quotaImg} alt='boome' src={'/home/block2_quota1.png'} />
+        <div className={styles.textContent3}>
+          When a flash loan has been issued, the<br />
+          smart contract rules ensure that the<br />
+          borrower pays back the loan before<br />
+          the transaction ends. If this condition<br />
+          isn't met, the smart contract reverses<br />
+          the transaction and it's like the loan<br />
+          never happened in the first place.
+        </div>
+        <img className={styles.quotaImg1} alt='boome' src={'/home/block2_quota2.png'} />
+      </div>
+      <p className={styles.title3}>This guarantees the safety of the funds in the reverse pool.</p>
+      <div className={styles.title1} style={{ textAlign: 'center' }}>
+        FLASH LOAN <br />
+        <span style={{ color: '#00F600' }}>EXAMPLE</span>
+      </div>
+      <div>
+        <div className={styles.item1}>
+          <Image className={styles.itemImg} width={385} height={301} alt='boome' src={'/home/block3_flash1.png'} />
+        </div>
+        <div className={styles.arrow1}>
+          <Image className={styles.arrowImg} width={61} height={54} alt='boome' src={'/mobile/arrowDown.png'} />
+        </div>
+        <div className={styles.item1}>
+          <Image className={styles.itemImg} width={385} height={301} alt='boome' src={'/home/block3_flash2.png'} />
+        </div>
+        <div className={styles.arrow1}>
+          <Image className={styles.arrowImg} width={61} height={54} alt='boome' src={'/mobile/arrowDown.png'} />
+        </div>
+        <div className={styles.item1}>
+          <Image className={styles.itemImg} width={385} height={301} alt='boome' src={'/home/block3_flash3.png'} />
+        </div>
+        <div className={styles.arrow1}>
+          <Image className={styles.arrowImg} width={61} height={54} alt='boome' src={'/mobile/arrowDown.png'} />
+        </div>
+        <div className={styles.item1}>
+          <Image className={styles.itemImg} width={385} height={301} alt='boome' src={'/home/block3_flash5.png'} />
+        </div>
+        <div className={styles.arrow1}>
+          <Image className={styles.arrowImg} width={61} height={54} alt='boome' src={'/mobile/arrowDown.png'} />
+        </div>
+        <div className={styles.item1}>
+          <Image className={styles.itemImg} width={385} height={301} alt='boome' src={'/home/block3_flash4.png'} />
+        </div>
+      </div>
+      <div className={styles.title1} style={{ textAlign: 'center' }}>
+        CHALLENGES IN <br />
+        <span style={{ color: '#00F600' }}>ARBITRAGE</span><br />
+        <span style={{ color: '#00F600' }}>&</span><br />
+        <span style={{ color: '#00F600' }}>FLASH LOANS</span>
+      </div>
+      <div className={styles.secondContent}>
+        <div className={styles.hex1}>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Arbitrage usually
+              requires capital</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Integration with
+              DeFi Protocols</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Risk Management
+              Framework</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Seeking Expert
+              Advice</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Evaluating Risk
+              and Reward</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Data-Driven
+              Decision Making</div>
+          </div>
+        </div>
+        <div className={styles.hex}>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Defining the
+              Arbitrage Strategy</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Rigorous Testing
+              and Backtesting</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Continuous Improvement and Adaptability</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Recognizing Untapped Opportunities</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Networking and Information Gathering</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Arbitrage requires from trader knowledge andexperience</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Some of trades can have losses or have problem with execution</div>
+          </div>
+        </div>
+        <div className={styles.hex1}>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Smart Contract
+              Developmen</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Deployment and Monitoring</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Identifying Profitable Opportunities</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Continuous Monitoring</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Many traders offer copying their strategy and trades</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Bots which traders userequires knowledge of programming</div>
+          </div>
+        </div>
       </div>
     </Fragment>
   );
