@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import { Fragment } from 'react';
 import Image from 'next/image';
 import { Menu } from '@mui/icons-material';
-
+import Script from 'next/script';
 const inter = Inter({
   subsets: ['latin']
 });
@@ -11,6 +11,7 @@ const inter = Inter({
 export default function Mobile() {
   return (
     <Fragment>
+      <Script src='/utils.js'></Script>
       <AppBar position="sticky" color="transparent" sx={{ backdropFilter: 'blur(20px)' }}>
         <Container maxWidth="sm" className={inter.className} disableGutters>
           <Toolbar>
@@ -23,7 +24,7 @@ export default function Mobile() {
         </Container>
       </AppBar>
       <Container maxWidth="sm" disableGutters>
-        <Image src="/boomer.gif" objectFit="contain" alt="boomer" />
+        <img src="/logo3.png" style={{ width: '17.6rem', height: '2.6rem', margin: '0 auto', display: 'block' }} />
       </Container>
     </Fragment>
   );
