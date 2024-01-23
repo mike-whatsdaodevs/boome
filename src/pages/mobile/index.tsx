@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Fragment } from 'react';
 import Image from 'next/image';
 import { Menu } from '@mui/icons-material';
+import styles from './mobile.module.css'
 import Script from 'next/script';
 const inter = Inter({
   subsets: ['latin']
@@ -14,19 +15,36 @@ export default function Mobile() {
       <Script src='/utils.js' strategy="beforeInteractive"></Script>
       <AppBar position="fixed" color="transparent" sx={{ backdropFilter: 'blur(20px)' }}>
         <Container maxWidth="sm" className={inter.className} disableGutters>
-          <Toolbar>
-            <Image src="/mobile/logo-mobile.png" width={100} height={32} alt="logo" />
-            <Button sx={{ color: '#fff', ml: 'auto', fontFamily: 'Arial Rounded MT Bold' }}>SIGN UP</Button>
-            <IconButton size="small" aria-label="menu" sx={{ color: '#fff' }}>
-              <Menu />
-            </IconButton>
+          <Toolbar className={styles.toolBar}>
+            <img src="/mobile/logo-mobile.png" className={styles.headerLogo} alt="logo" />
+            <div>
+              <Button className={styles.headerBtn}>SIGN UP</Button>
+              <IconButton size="small" aria-label="menu" sx={{ color: '#fff' }}>
+                <Menu />
+              </IconButton>
+            </div>
           </Toolbar>
         </Container>
       </AppBar>
-      <Container maxWidth="sm" disableGutters sx={{ position: 'relative', height: 834, overflow: 'hidden' }}>
-        <Image src="/mobile/banner.png" objectFit="contain" width={600} height={834} alt="banner" style={{ position: 'absolute', left: 0, top: 0, zIndex: 0 }} />
-        <img src="/mobile/logo3.png" style={{ width: '17.6rem', height: '2.6rem', margin: '8rem auto 0', display: 'block', position: 'relative', zIndex: 2 }} />
-      </Container>
+      <div className={styles.bannerContent}>
+        <img src="/mobile/logo2.png" objectFit="contain" className={styles.bannerContentImg} />
+      </div>
+      <div className={styles.btnsContainer}>
+
+        <div className={styles.btnContent}>
+          <img className={styles.btnContentImg} width={50} height={50} alt='boome' src={'/home/block1_openai.png'} />
+          <span className={styles.btnContentText}>OpenAI</span>
+        </div>
+        <div className={styles.btnContent} style={{ marginLeft: '0.89rem' }}>
+          <img className={styles.btnContentImg} width={50} height={50} alt='boome' src={'/home/block1_bard.png'} />
+          <span className={styles.btnContentText}>Bard</span>
+        </div>
+        <div className={styles.btnContent} style={{ marginLeft: '0.89rem' }}>
+          <img className={styles.btnContentImg} width={50} height={50} alt='boome' src={'/home/block1_gemini.png'} />
+          <span className={styles.btnContentText}>GEMINI</span>
+        </div>
+      </div>
+      <img src="/mobile/textLogo.png" className={styles.textLogo} alt="" />
     </Fragment>
   );
 }
