@@ -200,6 +200,99 @@ export default function Mobile() {
         <span style={{ color: '#00F600' }}>&</span><br />
         <span style={{ color: '#00F600' }}>FLASH LOANS</span>
       </div>
+      <div className={styles.secondContent}>
+        <div className={styles.hex1}>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Arbitrage usually
+              requires capital</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Integration with
+              DeFi Protocols</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Risk Management
+              Framework</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Seeking Expert
+              Advice</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Evaluating Risk
+              and Reward</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Data-Driven
+              Decision Making</div>
+          </div>
+        </div>
+        <div className={styles.hex}>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Defining the
+              Arbitrage Strategy</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Rigorous Testing
+              and Backtesting</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Continuous Improvement and Adaptability</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Recognizing Untapped Opportunities</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Networking and Information Gathering</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Arbitrage requires from trader knowledge andexperience</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Some of trades can have losses or have problem with execution</div>
+          </div>
+        </div>
+        <div className={styles.hex1}>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Smart Contract
+              Developmen</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Deployment and Monitoring</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Identifying Profitable Opportunities</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Continuous Monitoring</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}>Many traders offer copying their strategy and trades</div>
+          </div>
+          <div className={styles.hexGrid}>
+            <div className={styles.hexTitle}></div>
+            <div className={styles.hexContent}> Bots which traders userequires knowledge of programming</div>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 }

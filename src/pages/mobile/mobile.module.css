@@ -197,3 +197,47 @@
   width: 13.69169rem;
   height: 10.7065rem;
 }
+.secondContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2.08rem;
+  flex-direction: row;
+}
+.hex {
+  width: max-content;
+  margin-top: 3.04rem;
+}
+.hex1 {
+  margin-top: 5.29rem;
+  width: max-content;
+}
+.hexGrid {
+  width: 6.35444rem;
+  height: 6.35444rem;
+  background: url(/home/block4_pol1.png) center no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  margin: 0 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hexTitle {
+  width: 1.125rem;
+  height: 1.125rem;
+  background: url(/home/block4_circle2.png) center no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 5px;
+}
+.hexContent {
+  color: #fff;
+  text-align: center;
+  font-family: Arvo;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  width: 4.6rem;
+}
