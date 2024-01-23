@@ -9,6 +9,138 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const flash_list = [
+  {
+    name: "AAVE",
+    img: "/home/block7_logo1.png",
+  },
+  {
+    name: "RADIANT",
+    img: "/home/block7_logo2.png",
+  },
+  {
+    name: "DYDX",
+    img: "/home/block7_logo3.png",
+  },
+  {
+    name: "UNISWAP",
+    img: "/home/block7_logo4.png",
+  },
+];
+
+const decentralized_list = [
+  {
+    name: "UNISWAP",
+    img: "/home/block8_logo1.png",
+  },
+  {
+    name: "PANCAKESWAP",
+    img: "/home/block8_logo2.png",
+  },
+  {
+    name: "SUSHI",
+    img: "/home/block8_logo3.png",
+  },
+  {
+    name: "CURVE",
+    img: "/home/block8_logo4.png",
+  },
+  {
+    name: "BALANCER",
+    img: "/home/block8_logo5.png",
+  },
+  {
+    name: "DODO",
+    img: "/home/block8_logo6.png",
+  },
+  {
+    name: "APE",
+    img: "/home/block8_logo7.png",
+  },
+  {
+    name: "WOOFI",
+    img: "/home/block8_logo8.png",
+  },
+  {
+    name: "HASHFLOW",
+    img: "/home/block8_logo9.png",
+  },
+  {
+    name: "PANGOLIN",
+    img: "/home/block8_logo10.png",
+  },
+  {
+    name: "SPOOKYSWAP",
+    img: "/home/block8_logo11.png",
+  },
+  {
+    name: "BISWAP",
+    img: "/home/block8_logo12.png",
+  },
+  {
+    name: "QUICKSWAP",
+    img: "/home/block8_logo13.png",
+  },
+  {
+    name: "GMX",
+    img: "/home/block8_logo14.png",
+  },
+  {
+    name: "ORCA",
+    img: "/home/block8_logo15.png",
+  },
+  {
+    name: "CLIPPER-DEX",
+    img: "/home/block8_logo16.png",
+  },
+  {
+    name: "TRADER-JOE",
+    img: "/home/block8_logo17.png",
+  },
+  {
+    name: "TRISOLARIS",
+    img: "/home/block8_logo18.png",
+  },
+];
+
+const wallets_list = [
+  {
+    name: "trust Wallet",
+    img: "/home/block9_logo1.png",
+  },
+  {
+    name: "Metamask",
+    img: "/home/block9_logo2.png",
+  },
+  {
+    name: "Wallet Connect",
+    img: "/home/block9_logo3.png",
+  },
+  {
+    name: "Rainbow",
+    img: "/home/block9_logo4.png",
+  },
+];
+
+const aggragators_list = [
+  {
+    name: "Paraswap",
+    img: "/home/block10_logo1.png",
+  },
+  {
+    name: "Paraswap",
+    img: "/home/block10_logo2.png",
+  },
+  {
+    name: "0x",
+    img: "/home/block10_logo3.png",
+  },
+  {
+    name: "Openocean",
+    img: "/home/block10_logo4.png",
+  },
+];
+
 export default function Mobile() {
   return (
     <Fragment>
@@ -152,22 +284,54 @@ export default function Mobile() {
           </div>
         </div>
       </div>
-      <div>
+      <div className={styles.flash}>
         <h3 className={styles.main_title_white}>FLASH LOAN</h3>
         <h3 className={styles.main_title_green}>LENDING</h3>
         <h3 className={styles.main_title_green}>PROTOCOL</h3>
+        <div className={styles.flash_list}>
+          {flash_list.map((item) => (
+            <div className={styles.flash_list_item} key="index">
+              <img src={item.img} />
+              <h5>{item.name}</h5>
+            </div>
+          ))}
+        </div>
       </div>
-      <div>
+      <div className={styles.decentralized}>
         <h3 className={styles.main_title_white}>DECENTRALIZED</h3>
         <h3 className={styles.main_title_green}>EXCHANGES</h3>
+        <div className={styles.flash_list}>
+          {decentralized_list.map((item) => (
+            <div className={styles.flash_list_item} key="index">
+              <img src={item.img} />
+              <h5>{item.name}</h5>
+            </div>
+          ))}
+        </div>
       </div>
-      <div>
+      <div className={styles.wallets}>
         <h3 className={styles.main_title_white}>WALLETS</h3>
+        <div className={styles.flash_list}>
+          {wallets_list.map((item) => (
+            <div className={styles.flash_list_item} key="index">
+              <img src={item.img} />
+              <h5>{item.name}</h5>
+            </div>
+          ))}
+        </div>
       </div>
-      <div>
+      <div className={styles.aggragators}>
         <h3 className={styles.main_title_white}>DECENTRALIZED</h3>
         <h3 className={styles.main_title_white}>EXCHANGES</h3>
         <h3 className={styles.main_title_green}>AGGRAGATORS</h3>
+        <div className={styles.flash_list}>
+          {aggragators_list.map((item) => (
+            <div className={styles.flash_list_item} key="index">
+              <img src={item.img} />
+              <h5>{item.name}</h5>
+            </div>
+          ))}
+        </div>
       </div>
       <div className={styles.roadmap}>
         <h3 className={styles.main_title_white}>ROADMAP</h3>
@@ -212,6 +376,17 @@ export default function Mobile() {
             in the present moment before they disappear.
           </div>
         </div>
+        {/* <div className={styles.success_video}>
+          <video
+            autoPlay
+            loop
+            muted
+            className={styles.motion}
+            poster="/home/block3_media_first.png"
+          >
+            <source src="/home/block3_media.mov" type="video/mp4" />
+          </video>
+        </div> */}
       </div>
     </Fragment>
   );
