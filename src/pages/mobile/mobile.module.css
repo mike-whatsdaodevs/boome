@@ -1,0 +1,66 @@
+.toolBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.86rem;
+}
+.headerLogo {
+  width: 5.7rem;
+  height: 0.6rem;
+  padding: 0 !important;
+  padding-right: 0 !important;
+}
+.headerBtn {
+  color: #fff;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bannerContent {
+  width: 17.60463rem;
+  /* height: 2.67444rem; */
+  margin: 0 auto;
+  margin-top: 6.94rem;
+}
+.bannerContentImg {
+  width: 17.60463rem;
+  /* height: 2.67rem; */
+}
+.btnsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 7.47rem;
+  margin-bottom: 4.07rem;
+}
+.btnContent {
+  width: 5.51913rem;
+  height: 3.01044rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnContentImg {
+  width: 1.10381rem;
+  height: 1.10381rem;
+}
+.btnContentText {
+  color: #fff;
+  font-family: "Arial Rounded MT Bold";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.textLogo {
+  display: block;
+  width: 21.5625rem;
+  height: 4.71225rem;
+  margin: 0 auto;
+}
