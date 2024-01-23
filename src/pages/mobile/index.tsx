@@ -293,6 +293,7 @@ export default function Mobile() {
           </div>
         </div>
       </div>
+      <div className={styles.footer}></div>
     </Fragment>
   );
 }
