@@ -165,7 +165,7 @@ export default function Mobile() {
         FLASH LOAN <br />
         <span style={{ color: '#00F600' }}>EXAMPLE</span>
       </div>
-      <div>
+      <div className={styles.bg3}>
         <div className={styles.item1}>
           <Image className={styles.itemImg} width={385} height={301} alt='boome' src={'/home/block3_flash1.png'} />
         </div>
@@ -293,7 +293,15 @@ export default function Mobile() {
           </div>
         </div>
       </div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}>
+        <ul>
+          <li className={styles.footerLeftIcon1}></li>
+          <li className={styles.footerLeftIcon2}></li>
+          <li className={styles.footerLeftIcon3}></li>
+          <li className={styles.footerLeftIcon4}></li>
+        </ul>
+        <img src="/mobile/logo2.png" className={styles.footerIcon} alt="" />
+      </div>
     </Fragment>
   );
 }
