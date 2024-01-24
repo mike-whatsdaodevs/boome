@@ -337,7 +337,7 @@ function Home() {
                     <div style={{ zIndex: 10, width: '80%', textAlign: 'center' }}>
                         <Image className={styles.bottom} width={1320} height={108} alt='boome' src={'/home/block1_bottom.png'} />
                     </div>
-                    <video
+                    {/* <video
                         autoPlay
                         loop
                         muted
@@ -346,7 +346,7 @@ function Home() {
                         poster="/home/first.png"
                     >
                         <source src="/home/motion.mp4" type="video/mp4" />
-                    </video>
+                    </video> */}
                 </div>
                 <div className={styles.block2}>
                     <div className={styles.scroll}>

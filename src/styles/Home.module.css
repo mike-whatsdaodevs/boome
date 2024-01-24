@@ -16,6 +16,8 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  background: url("/mobile/boomer.gif") top left no-repeat;
+  background-size: 100vw auto;
 }
 
 .block1 .bigTitle {
