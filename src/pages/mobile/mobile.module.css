@@ -421,15 +421,17 @@
   margin: 1rem 6% 0 6%;
   display: flex;
   flex-wrap: wrap;
+  
 }
 .flash_list_item {
   background: url(/home/block7_card_bg.png) center top / 100% no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 43%;
   height: 4rem;
   margin: 1rem 3.5% 0 3.5%;
+  padding-left: 0.6rem;
   box-sizing: border-box;
 }
 .flash_list_item > img {
