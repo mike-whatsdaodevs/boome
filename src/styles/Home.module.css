@@ -18,6 +18,7 @@
   overflow: hidden;
   background: url("/mobile/boomer.gif") top left no-repeat;
   background-size: 100vw auto;
+  min-height: 1000px;
 }
 
 .block1 .bigTitle {
