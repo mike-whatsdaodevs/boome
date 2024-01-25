@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function App() {
   const [type, setType] = useState('pc')
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     if (
       navigator.userAgent.match(/Mobi/i) ||
@@ -18,9 +19,22 @@ export default function App() {
       setType('pc')
     }
   }, [])
+  useEffect(() => {
+    // setTimeout(() => {
+      setLoading(false)
+    // }, 5000)
+
+  }, [])
   return (
     <>
-      {type === 'pc' ? <Home /> : <Mobile />}
+      {loading && <div className='loading'>
+        
+        <img src="/32.png" alt="" className='rotate'/>
+        <br />
+        <div >加载中...</div>
+
+      </div>}
+      <> {type === 'pc' ? <Home /> : <Mobile />}</>
     </>
   )
 }
