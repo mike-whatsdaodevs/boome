@@ -1,3 +1,8 @@
+.commonBg{
+  background: url("/home/block3_bg1.png") fixed;
+  background-size: auto 100vh;
+
+}
 .toolBar {
   display: flex;
   align-items: center;
@@ -32,7 +37,7 @@
 .firstContent {
   padding-top: 6.94rem;
   background: url("/mobile/boomer.gif") no-repeat;
-  background-size: 59rem 37rem;
+  background-size: 59rem auto;
   background-position: 0rem 0rem;
   padding-bottom: 2.7rem;
 }
@@ -53,8 +58,8 @@
   justify-content: center;
   margin: 0 auto;
   align-items: center;
-  margin-top: 16.47rem;
-  margin-bottom: 4.07rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .btnContent {
@@ -87,6 +92,7 @@
   width: 21.5625rem;
   height: 4.71225rem;
   margin: 0 auto;
+  margin-top:16rem;
 }
 
 .scrollitem {
@@ -540,6 +546,7 @@
   overflow: hidden;
   margin-top: 1.5rem;
 }
+
 
 .choose_video>video {
   width: 235%;

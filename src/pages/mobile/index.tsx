@@ -208,6 +208,7 @@ export default function Mobile() {
   return (
     <Fragment>
       <Script src="/utils.js" strategy="beforeInteractive"></Script>
+      <div className={styles.commonBg}>
       <AppBar
         position="fixed"
         color="transparent"
@@ -237,6 +238,8 @@ export default function Mobile() {
             className={styles.bannerContentImg}
           />
         </div>
+        <img src="/mobile/textLogo.png" className={styles.textLogo} alt="" />
+
         <div className={styles.btnsContainer}>
           <div className={styles.btnContent}>
             <img
@@ -269,7 +272,6 @@ export default function Mobile() {
             <span className={styles.btnContentText}>GEMINI</span>
           </div>
         </div>
-        <img src="/mobile/textLogo.png" className={styles.textLogo} alt="" />
       </div>
       <div className={styles.scrollList}>
         <ParallaxText baseVelocity={-1}>
@@ -812,7 +814,7 @@ export default function Mobile() {
           trades without the need for manual coding and analyzing.
         </p>
         <div className={styles.choose_video}>
-          <video autoPlay loop muted>
+          <video autoPlay loop muted poster='/home/kaola.mp4'>
             <source src="/home/kaola.mp4" type="video/mp4" />
           </video>
         </div>
@@ -858,6 +860,7 @@ export default function Mobile() {
           <li className={styles.footerLeftIcon4}></li>
         </ul>
         <img src="/mobile/logo2.png" className={styles.footerIcon} alt="" />
+      </div>
       </div>
     </Fragment>
   );

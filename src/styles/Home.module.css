@@ -2,6 +2,9 @@
   backdrop-filter: blur(20px);
   background-color: transparent;
 }
+.commonBg{
+   background: url("/home/block3_bg1.png") no-repeat fixed;
+}
 
 .block1 {
   width: 100vw;
@@ -52,7 +55,7 @@
   align-items: center;
   width: 50%;
   box-sizing: border-box;
-  margin-top: 150px;
+  margin-top: 20px;
 }
 
 .block1 .bar .title {
@@ -91,6 +94,7 @@
 .block1 .bottom {
   width: 80%;
   height: auto;
+  margin-top:160px;
 }
 
 .block2 {

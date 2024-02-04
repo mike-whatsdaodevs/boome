@@ -260,6 +260,7 @@ function Home() {
 
   return (
     <AnimatePresence mode="wait">
+      <div className={styles.commonBg}>
       <div key={'00'}>
         <AppBar position="fixed" className={styles.nav}>
           <Container maxWidth="xl">
@@ -369,6 +370,15 @@ function Home() {
               src={'/home/block1_title.png'}
             />
           </motion.div>
+          <div style={{ zIndex: 10, width: '80%', textAlign: 'center'}}>
+            <Image
+              className={styles.bottom}
+              width={1320}
+              height={108}
+              alt="boome"
+              src={'/home/block1_bottom.png'}
+            />
+          </div>
           <div className={styles.bar} style={{ zIndex: 10 }}>
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
@@ -422,15 +432,7 @@ function Home() {
               <span>Gemini</span>
             </motion.div>
           </div>
-          <div style={{ zIndex: 10, width: '80%', textAlign: 'center' }}>
-            <Image
-              className={styles.bottom}
-              width={1320}
-              height={108}
-              alt="boome"
-              src={'/home/block1_bottom.png'}
-            />
-          </div>
+     
           {/* <video
                         autoPlay
                         loop
@@ -1525,6 +1527,7 @@ function Home() {
 
       <div className={styles.bottom}>
         <Image width={1920} height={122} alt="" src={'/home/bottom.png'} />
+      </div>
       </div>
     </AnimatePresence>
   );
