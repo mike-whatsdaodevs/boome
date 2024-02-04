@@ -718,31 +718,31 @@ export default function Mobile() {
               <img src="/mobile/networks-icon/networks-icon-1.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>POLYGON</h5>
               <img src="/mobile/networks-icon/networks-icon-2.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>BINANCE</h5>
               <img src="/mobile/networks-icon/networks-icon-3.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>ARBITRUM</h5>
               <img src="/mobile/networks-icon/networks-icon-4.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>AVALANCHE</h5>
               <img src="/mobile/networks-icon/networks-icon-5.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>FANTOM</h5>
               <img src="/mobile/networks-icon/networks-icon-6.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>METIS</h5>
               <img src="/mobile/networks-icon/networks-icon-7.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>OPTIMISUM</h5>
               <img src="/mobile/networks-icon/networks-icon-8.png" />
             </div>
           </div>
