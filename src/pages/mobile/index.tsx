@@ -813,11 +813,12 @@ export default function Mobile() {
           ofautomation, transparency, and reliability in executing arbitrage
           trades without the need for manual coding and analyzing.
         </p>
-        <div className={styles.choose_video}>
+        {/* <div className={styles.choose_video}>
           <video autoPlay loop muted poster='/home/kaola.mp4'>
             <source src="/home/kaola.mp4" type="video/mp4" />
           </video>
-        </div>
+        </div> */}
+        <div className={styles.beargif}></div>
       </div>
       <div className={styles.success}>
         <h5 className={styles.main_title_small}>Key elements of</h5>

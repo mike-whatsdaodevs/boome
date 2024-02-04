@@ -3,7 +3,8 @@
   background-color: transparent;
 }
 .commonBg{
-   background: url("/home/block3_bg1.png") no-repeat fixed;
+   background: url("/home/lizi.gif") no-repeat fixed;
+   background-size: 100vw auto;
 }
 
 .block1 {
@@ -94,7 +95,7 @@
 .block1 .bottom {
   width: 80%;
   height: auto;
-  margin-top:160px;
+  margin-top:260px;
 }
 
 .block2 {
