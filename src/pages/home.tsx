@@ -349,7 +349,7 @@ function Home() {
                 ))}
               </Box>
               <Box sx={{ flexGrow: 0, fontSize: 2 }}>
-                <LoginButton variant="outlined">SIGN UP</LoginButton>
+                <LoginButton variant="outlined">Launch App</LoginButton>
               </Box>
             </Toolbar>
           </Container>
