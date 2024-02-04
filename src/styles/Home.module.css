@@ -27,6 +27,15 @@
   height: auto;
 }
 
+.btnImg {
+  width: 16rem;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 99999;
+  margin-top: 3rem;
+}
+
 .block1 .motion {
   position: absolute;
   left: 0;
@@ -69,7 +78,7 @@
   margin-right: 10px;
 }
 
-.block1 .title > span {
+.block1 .title>span {
   font-family: Arial Rounded MT Bold;
   font-size: 18px;
   font-weight: 400;
@@ -245,7 +254,7 @@
   z-index: 1000;
 }
 
-.block2 > .content {
+.block2>.content {
   display: flex;
   align-items: center;
   max-width: 1000px;
@@ -264,7 +273,7 @@
   padding-bottom: 100px;
 }
 
-.block3 > .content {
+.block3>.content {
   width: 1000px;
   background-position: center;
   border-radius: 12px;
@@ -819,6 +828,7 @@
   width: 100%;
   height: auto;
 }
+
 .block12 .bg .meme {
   position: absolute;
   top: 75px;
