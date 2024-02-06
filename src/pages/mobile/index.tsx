@@ -208,6 +208,7 @@ export default function Mobile() {
   return (
     <Fragment>
       <Script src="/utils.js" strategy="beforeInteractive"></Script>
+      <div className={styles.commonBg}>
       <AppBar
         position="fixed"
         color="transparent"
@@ -237,6 +238,8 @@ export default function Mobile() {
             className={styles.bannerContentImg}
           />
         </div>
+        <img src="/mobile/textLogo.png" className={styles.textLogo} alt="" />
+
         <div className={styles.btnsContainer}>
           <div className={styles.btnContent}>
             <img
@@ -269,7 +272,6 @@ export default function Mobile() {
             <span className={styles.btnContentText}>GEMINI</span>
           </div>
         </div>
-        <img src="/mobile/textLogo.png" className={styles.textLogo} alt="" />
       </div>
       <div className={styles.scrollList}>
         <ParallaxText baseVelocity={-1}>
@@ -716,31 +718,31 @@ export default function Mobile() {
               <img src="/mobile/networks-icon/networks-icon-1.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>POLYGON</h5>
               <img src="/mobile/networks-icon/networks-icon-2.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>BINANCE</h5>
               <img src="/mobile/networks-icon/networks-icon-3.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>ARBITRUM</h5>
               <img src="/mobile/networks-icon/networks-icon-4.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>AVALANCHE</h5>
               <img src="/mobile/networks-icon/networks-icon-5.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>FANTOM</h5>
               <img src="/mobile/networks-icon/networks-icon-6.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>METIS</h5>
               <img src="/mobile/networks-icon/networks-icon-7.png" />
             </div>
             <div className={styles.networks_list_item}>
-              <h5>ETHEREUM</h5>
+              <h5>OPTIMISUM</h5>
               <img src="/mobile/networks-icon/networks-icon-8.png" />
             </div>
           </div>
@@ -811,11 +813,12 @@ export default function Mobile() {
           ofautomation, transparency, and reliability in executing arbitrage
           trades without the need for manual coding and analyzing.
         </p>
-        <div className={styles.choose_video}>
-          <video autoPlay loop muted>
+        {/* <div className={styles.choose_video}>
+          <video autoPlay loop muted poster='/home/kaola.mp4'>
             <source src="/home/kaola.mp4" type="video/mp4" />
           </video>
-        </div>
+        </div> */}
+        <div className={styles.beargif}></div>
       </div>
       <div className={styles.success}>
         <h5 className={styles.main_title_small}>Key elements of</h5>
@@ -858,6 +861,7 @@ export default function Mobile() {
           <li className={styles.footerLeftIcon4}></li>
         </ul>
         <img src="/mobile/logo2.png" className={styles.footerIcon} alt="" />
+      </div>
       </div>
     </Fragment>
   );

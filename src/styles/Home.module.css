@@ -2,6 +2,10 @@
   backdrop-filter: blur(20px);
   background-color: transparent;
 }
+.commonBg{
+   background: url("/home/lizi.gif") no-repeat fixed;
+   background-size: 100vw auto;
+}
 
 .block1 {
   width: 100vw;
@@ -52,7 +56,7 @@
   align-items: center;
   width: 50%;
   box-sizing: border-box;
-  margin-top: 150px;
+  margin-top: 20px;
 }
 
 .block1 .bar .title {
@@ -91,6 +95,7 @@
 .block1 .bottom {
   width: 80%;
   height: auto;
+  margin-top:260px;
 }
 
 .block2 {
