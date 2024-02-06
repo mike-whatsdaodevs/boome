@@ -31,7 +31,7 @@ export default function App() {
         
         <img src="/32.png" alt="" className='rotate'/>
         <br />
-        <div >加载中...</div>
+        <div >loading...</div>
 
       </div>}
       <> {type === 'pc' ? <Home /> : <Mobile />}</>
