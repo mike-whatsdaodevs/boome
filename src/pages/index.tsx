@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import Home from './home'
 import Mobile from './mobile';
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
       setType('pc')
     }
   }, [])
-  useEffect(() => {
+  useLayoutEffect(() => {
     // setTimeout(() => {
       setLoading(false)
     // }, 5000)
