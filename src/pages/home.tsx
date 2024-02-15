@@ -21,6 +21,7 @@ import {
 import { ParallaxText } from '@/components/ScrollText';
 import { useRef, useState } from 'react';
 import { Section } from '@/components/Section';
+import Particle from '@/components/Particle';
 const pages = ['HOME', 'INTRODUCE', 'PRODUCT', 'COOPERATE', 'COMPANY'];
 const block5_list = [
   'Arbitrage usually requires capital',
@@ -260,7 +261,6 @@ function Home() {
 
   return (
     <AnimatePresence mode="wait">
-      <div className={styles.commonBg}>
       <div key={'00'}>
         <AppBar position="fixed" className={styles.nav}>
           <Container maxWidth="xl">
@@ -370,7 +370,7 @@ function Home() {
               src={'/home/block1_title.png'}
             />
           </motion.div>
-          <div style={{ zIndex: 10, width: '80%', textAlign: 'center'}}>
+          <div style={{ zIndex: 10, width: '80%', textAlign: 'center' }}>
             <Image
               className={styles.bottom}
               width={1320}
@@ -432,7 +432,7 @@ function Home() {
               <span>Gemini</span>
             </motion.div>
           </div>
-     
+
           {/* <video
                         autoPlay
                         loop
@@ -475,6 +475,7 @@ function Home() {
               ))}
             </ParallaxText>
           </div>
+          <Particle id = "particle1" className={styles.particlesBg}/>
           <div className={styles.container}>
             <div>
               <Image
@@ -1355,7 +1356,9 @@ function Home() {
           </div>
         </div>
       </div>
+      <Particle id = "particle2" className={styles.particles2Bg}/>
       <div className={styles.block8} style={{ marginTop: '100px' }}>
+      
         <p className={styles.title} style={{ marginTop: '0px' }}>
           DECENTRALIZED
           <span style={{ color: '#00F600', zIndex: 1000 }}>EXCHANGES</span>
@@ -1502,7 +1505,6 @@ function Home() {
         <p className={styles.title} style={{ marginTop: '0px' }}>
           YOUR
           <span style={{ color: '#00F600', zIndex: 1000 }}>
-            {' '}
             SUCCESS TRADES
           </span>
         </p>
@@ -1527,7 +1529,6 @@ function Home() {
 
       <div className={styles.bottom}>
         <Image width={1920} height={122} alt="" src={'/home/bottom.png'} />
-      </div>
       </div>
     </AnimatePresence>
   );

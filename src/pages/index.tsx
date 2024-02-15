@@ -19,22 +19,24 @@ export default function App() {
       setType('pc')
     }
   }, [])
-  useLayoutEffect(() => {
+  useEffect(() => {
     // setTimeout(() => {
-      setLoading(false)
+    setLoading(false)
     // }, 5000)
 
   }, [])
   return (
     <>
       {loading && <div className='loading'>
-        
-        <img src="/32.png" alt="" className='rotate'/>
+
+        <img src="/32.png" alt="" className='rotate' />
         <br />
         <div >loading...</div>
 
       </div>}
+
       <> {type === 'pc' ? <Home /> : <Mobile />}</>
+
     </>
   )
 }

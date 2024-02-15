@@ -2,10 +2,6 @@
   backdrop-filter: blur(20px);
   background-color: transparent;
 }
-.commonBg{
-   background: url("/home/lizi.gif") no-repeat fixed;
-   background-size: 100vw auto;
-}
 
 .block1 {
   width: 100vw;
@@ -95,7 +91,7 @@
 .block1 .bottom {
   width: 80%;
   height: auto;
-  margin-top:260px;
+  margin-top: 260px;
 }
 
 .block2 {
@@ -133,12 +129,14 @@
 }
 
 .block2 .container {
+  position: relative;
   max-width: 1000px;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
+  z-index: 1
 }
 
 .block2 .container .rat {
@@ -934,4 +932,19 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0 10px;
+}
+
+.particlesBg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1200px;
+  height: 500px;
+}
+.particles2Bg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1200px;
+  height: 800px;
 }

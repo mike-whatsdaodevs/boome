@@ -7,6 +7,7 @@ import styles from './mobile.module.css';
 import Script from 'next/script';
 import { ParallaxText } from '@/components/ScrollText';
 import { useState } from 'react';
+import Particle from '@/components/Particle';
 const inter = Inter({
   subsets: ['latin'],
 });
@@ -208,7 +209,6 @@ export default function Mobile() {
   return (
     <Fragment>
       <Script src="/utils.js" strategy="beforeInteractive"></Script>
-      <div className={styles.commonBg}>
       <AppBar
         position="fixed"
         color="transparent"
@@ -398,6 +398,8 @@ export default function Mobile() {
       )}
       {open && (
         <div className={styles.bg3}>
+      <Particle id="mobileParticle1" className = {styles.mobileParticleBg}/>
+
           <div className={styles.item1}>
             <Image
               className={styles.itemImg}
@@ -614,6 +616,7 @@ export default function Mobile() {
         <img src="/mobile/img-zero-pc.png" className={styles.zero_pc} />
       </Container>
       <div className={styles.zero_list}>
+        <Particle id = "mobileParticle2" className={styles.mobileParticleBg2}/>
         {/* 1 */}
         <div className={styles.zero_list_item}>
           <img
@@ -861,7 +864,6 @@ export default function Mobile() {
           <li className={styles.footerLeftIcon4}></li>
         </ul>
         <img src="/mobile/logo2.png" className={styles.footerIcon} alt="" />
-      </div>
       </div>
     </Fragment>
   );
