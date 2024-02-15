@@ -6,13 +6,13 @@ import {
     type ISourceOptions,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
-interface IProps{
-    id:string
-    className:any
+interface IProps {
+    id: string
+    className: any
 
 }
 const Index: FC<IProps> = (props) => {
-    const {id,className} = props
+    const { id, className } = props
     const [init, setInit] = useState(false);
     useEffect(() => {
         initParticlesEngine(async (engine) => {
@@ -27,48 +27,47 @@ const Index: FC<IProps> = (props) => {
     };
     const options: ISourceOptions = useMemo(() => (
         {
-            
-            fullScreen:{
-                enable:false,
-                zIndex:0
+
+            fullScreen: {
+                enable: false,
+                zIndex: 0
             },
-            fpsLimit: 500,
             particles: {
                 color: {
-                    value: ['#fff','#7f8fe9'],
+                    value: ['#fff', '#7f8fe9'],
                 },
 
-                collisions: {
-                    enable: true,
-                },
+
                 move: {
                     direction: "none",
                     enable: true,
-                    outModes: {
-                        default: "bounce",
-                    },
+                    outModes: 'out',
                     random: false,
                     speed: 3,
                     straight: false,
                 },
-                number: {
-                    density: {
-                        enable: true,
-                        area: 500,
-                    },
-                    value:200,
+                number: { 
+                    // density: {
+                    //     enable: true,
+                    //     area: 500,
+                    // },
+                    value: 20,
                 },
                 opacity: {
-                    value:0.5,
+                    value: 0.5,
+                    random:true,
+                    animation: {
+                        speed: 3,
+                        minimumValue: 0.1
+                    }
                 },
                 shape: {
                     type: "circle",
                 },
                 size: {
-                    value: { min: 0.5, max: 2.5},
+                    value: { min: 0.5, max: 2.5 },
                 },
             },
-            detectRetina: true,
 
 
         }
@@ -77,7 +76,7 @@ const Index: FC<IProps> = (props) => {
     if (init) {
         return (
             <Particles
-               className = {className}
+                className={className}
                 id={id}
                 particlesLoaded={particlesLoaded}
                 options={options}
